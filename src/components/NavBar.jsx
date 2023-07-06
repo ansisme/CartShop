@@ -19,9 +19,9 @@ const NavBar = () => {
     </div>
 
     {/* img componenet */}
-       <div className='w-1/2 flex-col p-10 relative flex ml-auto'>
+       {/* <div className='w-1/2 flex-col p-10 relative flex ml-auto'>
           <img src={todoimg} alt="todo-img" className='w-3/4 m-auto mt-10' />
-       </div>
+       </div> */}
     </>
   )
 }
