@@ -10,6 +10,8 @@ module.exports = {
                 'Addbtn': '#7A7AFF',
                 'iconsColors': '#ff8e8e',
                 'delete': '#d00000',
+                'blueBlack': '[#110f1a]',
+                'gradient': 'linear-gradient(to right, rgb(30, 58, 138), rgb(30, 58, 138), rgb(239, 68, 68))',
             }
 
         },
