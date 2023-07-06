@@ -8,9 +8,9 @@ module.exports = {
             colors: {
                 'standardBg': '#F5F5F5',
                 'Addbtn': '#7A7AFF',
-                'iconsColors': '#ff8e8e',
+                'iconsColors': '#ff7777',
                 'delete': '#d00000',
-                'blueBlack': '[#110f1a]',
+                'blueBlack': '#110f1a',
                 'gradient': 'linear-gradient(to right, rgb(30, 58, 138), rgb(30, 58, 138), rgb(239, 68, 68))',
             }
 
