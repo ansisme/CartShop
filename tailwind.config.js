@@ -7,6 +7,9 @@ module.exports = {
         extend: {
             colors: {
                 'standardBg': '#F5F5F5',
+                'Addbtn': '#7A7AFF',
+                'iconsColors': '#ff8e8e',
+                'delete': '#d00000',
             }
 
         },
