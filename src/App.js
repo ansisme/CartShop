@@ -5,7 +5,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import ShoppingCart from "./components/ShoppingCart";
 import CartProvider from "./components/CardContext";
-
+import APIFetch from "./components/APIFetch";
 function App() {
   return (
     <div>
@@ -16,6 +16,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/cart" element={<ShoppingCart />} />
+            <Route path="/api" element={<APIFetch />} />
           </Routes>
         </CartProvider>
       </Router>
