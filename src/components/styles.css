@@ -1,0 +1,39 @@
+.gradient {
+    background: linear-gradient(to right, rgb(49, 46, 129), rgb(49, 46, 129), rgb(239, 68, 68));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.custom-bounce {
+    animation: custom-bounce-animation 2s infinite;
+}
+
+@keyframes custom-bounce-animation {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+}
+
+.custom-bounce-arrow {
+    animation: custom-bounce-animation 3s infinite;
+}
+
+@keyframes custom-bounce-animation {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2px);
+    }
+}
+
+
+/* body {
+    background-color: #110f1a;
+} */
