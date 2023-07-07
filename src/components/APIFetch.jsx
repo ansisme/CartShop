@@ -5,7 +5,7 @@ const APIFetch = () => {
   const REACT_APP_NASA_API_KEY = process.env.REACT_APP_NASA_API_KEY;
   const [nasadata, setNasadata] = useState([]);
   const [loading, setLoading] = useState(false);
-
+  console.log(REACT_APP_NASA_API_KEY);
   useEffect(() => {
     getNasaData();
 
@@ -34,7 +34,7 @@ const APIFetch = () => {
 
   return (
     <>
-      <div className='bg-black text-white'>
+      <div className='bg-black h-screen w-screen text-white'>
         <div className="flex flex-col center p-3">
           <h1 className='font-bold text-4xl max-sm:text-2xl max-md:text-2xl p-3 text-center'>{nasadata.title}</h1>
           <h4 className='font-medium text-xl max-sm:text-xl max-md:text-2xl p-3 text-center'>{nasadata.date}</h4>
