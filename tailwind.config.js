@@ -11,9 +11,12 @@ module.exports = {
                 'iconsColors': '#ff7777',
                 'delete': '#d00000',
                 'blueBlack': '#110f1a',
+                'lighGrey': '#b4b4b4',
                 'gradient': 'linear-gradient(to right, rgb(30, 58, 138), rgb(30, 58, 138), rgb(239, 68, 68))',
-            }
-
+            },
+            screens: {
+                'xs': '475px',
+            },
         },
     },
     plugins: [],
