@@ -12,7 +12,7 @@ const Todo = () => {
       <div className='m-auto max-sm:w-full max-md:w-full'>
        <TodoComponents/> 
       </div>
-      <div className=' ml-5'>
+      <div className=' mx-5 max-sm:ml-0 max-sm:w-full max-xs:w-full max-md:w-full justify-center items-center'>
           <img src={todoimg} alt="todo-img" className='w-3/5 m-auto mt-10' />
       </div>
     </div>
