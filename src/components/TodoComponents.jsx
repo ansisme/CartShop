@@ -69,8 +69,8 @@ const totalTasks = todos.length;
 const completedTasks = todos.filter((todo) => todo.completed).length;
 
 return (
-    <div className='bg-standardBg rounded-2xl p-5 ml-10'>
-        <h2 className='font-semibold text-[32px]  text-center'>Todo List</h2>
+    <div className='bg-standardBg rounded-2xl max-sm:mx-8 max-xs:mx-8 p-5 max-sm:p-3 mx-10'>
+        <h2 className='font-semibold text-[32px] max-sm:text-[16px] text-center'>Todo List</h2>
         <div>
         <form onSubmit={handleSubmit} className='flex'>
         <div className='flex'>
@@ -79,11 +79,11 @@ return (
             placeholder='Enter Todo' 
             value= {input} 
             onChange={onInputChange}
-            className='m-4 p-2 flex rounded-md'
+            className='m-4 p-2 max-xs:p-1 w-full flex rounded-md focus:ring-Addbtn max-sm:text-[14px] max-xs:text-[12px] max-md:text-[16px]'
             required />
         </div>
            <div>
-           <button className=' m-4 p-2 flex hover:bg-[#ffb9b9] rounded-lg font-medium bg-iconsColors'>
+           <button className=' m-4 p-2 flex hover:bg-[#ffb9b9] rounded-lg font-medium bg-iconsColors max-sm:text-[14px] max-xs:text-[12px] max-md:text-[16px]'>
                 {edit?"OK": "ADD" }
             </button>
            </div>
@@ -91,21 +91,23 @@ return (
         </form>
         </div>
        
-        <div>
+        <div className='flex-col'>
             {todos.map((todo)=> (
                 <li key={todos.id} className='list-none p-2'>
                 <input
                     type='checkbox'
                     checked={todo.completed}
                     onChange={() => handleComplete(todo)}
-                    className='mr-8 accent-iconsColors  '
+                    className='mr-8 accent-iconsColors max-xs:m-0 '
                     />
 
                     <input 
                     type='text'
                     value={todo.title}
                     onChange={(event)=>event.preventDefault()} 
-                    className={` ${todo.completed ? 'line-through text-Addbtn' : ''} p-1.5 rounded-sm font-normal mr-5`}
+                    className={` ${todo.completed ? 'line-through text-Addbtn' : ''} p-1.5 rounded-md  font-normal mr-5 max-sm:w-full max-sm:mx-3 max-sm:my-3
+                    max-xs:w-full max-xs:mx-3 max-xs:my-3
+                     max-sm:text-[14px] max-xs:text-[12px] max-md:text-[16px]`}
                     />
 
                     <button>
@@ -127,9 +129,9 @@ return (
                 </li>
             ))}
         </div>
-        <div className='text-center mt-10 flex'>
-        <p className=' w-1/2'>Total Tasks: {totalTasks}</p>
-        <p className='mr-8 w-1/2'> Completed Tasks: {completedTasks}</p>
+        <div className='text-center mt-10 flex max-sm:text-[14px] max-xs:text-[12px] max-md:text-[16px]'>
+        <p className=' w-1/2 max-sm:w-full'>Total Tasks: {totalTasks}</p>
+        <p className='mr-8 w-1/2  max-sm:w-full max-xs:ml-8 justify-center items-center'> Completed Tasks: {completedTasks}</p>
       </div>
     </div>
   )
